@@ -1,5 +1,5 @@
 public class Point3D extends Point2D{
-    float z = 0.0f;
+    private float z = 0.0f;
 
     public Point3D() {
     }
@@ -19,8 +19,8 @@ public class Point3D extends Point2D{
 
     public float[] getXYZ() {
         float[] xyz = new float[3];
-        xyz[0] = super.x;
-        xyz[1] = super.y;
+        xyz[0] = super.getX();
+        xyz[1] = super.getY();
         xyz[2] = this.z;
         return xyz;
     }
